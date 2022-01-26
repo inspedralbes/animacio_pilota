@@ -11,7 +11,9 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
+    animation: movVertical 1s ease-in 2 alternate infinite;
+
 }
 
 #vertical {    
@@ -35,9 +37,11 @@
 
 @keyframes movVertical {
     from {        
+        top:0;
     }
 
     to {
+        top:75%;
     }
     
 }
