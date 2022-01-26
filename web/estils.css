@@ -2,6 +2,7 @@
     background-color: lightblue;
     width: 320px;
     height: 320px;
+    position: relative;
 }
 
 #pilota {
@@ -12,16 +13,28 @@
     border-radius: 50%;
 }
 
-#vertical {
-    animation: movVertical 10s linear  infinite ;
+#vertical {    
     background-color: black;
-    position: relative;
+    position: absolute;
+    
     width: 50px;
     height: 50%;
-    margin: auto;
+    left: 44%;
     transform-origin: bottom;
+    animation: movVertical 12s linear  infinite ;
 } 
 
+#busca2 {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 50%;    
+    background-color: chocolate;
+    border-radius: 40%;
+    left: 48%;
+    transform-origin: bottom; 
+    animation: movVertical 1s linear infinite;
+}
 
 @keyframes movVertical {
     from {        
