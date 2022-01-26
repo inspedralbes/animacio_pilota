@@ -72,8 +72,12 @@
         top:0;
     }
 
+    90% {
+        transform: scaleY(100%);
+    }
     to {
         top:75%;
+        transform: scaleY(80%);
     }
     
 }
