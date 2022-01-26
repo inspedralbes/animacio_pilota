@@ -1,4 +1,5 @@
 #mon {
+    margin-top: 50px;
     background-color: lightblue;
     width: 320px;
     height: 320px;
@@ -9,31 +10,27 @@
     background-color: yellow;
     width: 50px;
     height: 50px;
-    position: relative;        
     border-radius: 50%;
+    position: relative;
 }
 
 #vertical {    
-    background-color: black;
-    position: absolute;
-    
+    background-color: black;    
     width: 50px;
-    height: 50%;
-    left: 44%;
-    transform-origin: bottom;
-    animation: movVertical 12s linear  infinite ;
+    height: 75%;        
 } 
 
-#busca2 {
-    position: absolute;
-    top: 0;
-    width: 25px;
-    height: 50%;    
-    background-color: chocolate;
-    border-radius: 40%;
-    left: 48%;
-    transform-origin: bottom; 
-    animation: movVertical 1s linear infinite;
+#terra {
+    background-color: green;
+    height: 50px;
+    height: 100px;
+}
+
+#ombra {
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+    border-radius: 50%;    
 }
 
 @keyframes movVertical {
@@ -41,7 +38,6 @@
     }
 
     to {
-        transform:rotate(360deg);
     }
     
 }
